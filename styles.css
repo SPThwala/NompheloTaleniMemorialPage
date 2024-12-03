@@ -18,7 +18,7 @@ body {
     min-height: 500px; /* Increased height */
 }
 
-.profile-image img {
+.profile-image {
     width: 200px; /* Set the diameter of the circle */
     height: 200px; /* Same as width to make it a circle */
     border-radius: 50%; /* Makes it circular */
@@ -27,6 +27,11 @@ body {
     align-items: center; /* Vertically center the image */
     justify-content: center; /* Horizontally center the image */
 }
+ .profile-image img {
+            width: 100%; /* Make the image responsive */
+            height: 100%; /* Ensures it fills the container */
+            object-fit: cover; /* Maintains aspect ratio and ensures image covers the circle */
+        }
 
 h1 {
     font-size: 24px;

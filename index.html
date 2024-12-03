@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorial Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Profile Image">
+        </div>
+        <h1>Phelwazana Beauty Taleni</h1>
+        <p class="dates">November 20, 1958 - November 28, 2024</p>
+        <p class="location">Maqhinebeni location</p>
+        <div class="button-grid">
+            <button onclick="showSection('obituary')">
+                <img src="obituary-icon.jpg" alt="Obituary Icon" class="button-icon"> Obituary
+            </button>
+            <button onclick="showSection('services')">
+                <img src="services-icon.jpg" alt="Services Icon" class="button-icon"> Services
+            </button>
+            <button onclick="showSection('photos')">
+                <img src="photos-icon.jpg" alt="Photos Icon" class="button-icon"> Photos
+            </button>
+            <button onclick="showSection('memory-wall')">
+                <img src="memory-icon.jpg" alt="Memory Wall Icon" class="button-icon"> Memory Wall
+            </button>
+        </div>
+    </div>
+
+    <!-- Sections -->
+    <section id="obituary" class="content-section">
+        <h2>Obituary</h2>
+        <p>Details about the obituary go here. You can add more information as needed.</p>
+    </section>
+
+    <section id="services" class="content-section">
+        <h2>Services</h2>
+        <div class="service-details">
+            <p><strong>Date:</strong> [Enter the date]</p>
+            <p><strong>Time:</strong> [Enter the time]</p>
+            <p><strong>Location:</strong> [Enter the location]</p>
+            <p><strong>Additional Details:</strong> [Any specific instructions, like dress code or reception information.]</p>
+        </div>
+    </section>
+
+    <section id="photos" class="content-section">
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="Photo8.jpg" alt="Grandma Photo 8">
+            <img src="Photo1.jpg" alt="Grandma Photo 1">
+            <img src="Photo2.jpg" alt="Grandma Photo 2">
+            <img src="Photo11.jpg" alt="Grandma Photo 11">
+            <img src="Photo4.jpg" alt="Grandma Photo 4">
+            <img src="Photo5.jpg" alt="Grandma Photo 5">
+            <img src="Photo6.jpg" alt="Grandma Photo 6">
+            <img src="Photo7.jpg" alt="Grandma Photo 7">
+            <img src="Photo9.jpg" alt="Grandma Photo 9">
+            <img src="Photo10.jpg" alt="Grandma Photo 10">
+            <!--<img src="Photo12.jpg" alt="Grandma Photo 12">-->
+            <img src="Photo13.jpg" alt="Grandma Photo 13">
+            <img src="Photo3.jpg" alt="Grandma Photo 3">
+        </div>
+    </section>
+
+    <section id="memory-wall" class="content-section">
+        <h2>Memory Wall</h2>
+        <p>Share your cherished memories and messages below:</p>
+    
+        <!-- Form for submitting a memory -->
+        <form id="memory-form">
+            <textarea id="memory-input" rows="4" placeholder="Write your memory here..." required></textarea>
+            <button type="submit">Share Memory</button>
+        </form>
+    
+        <!-- Section to display shared memories -->
+        <div id="memory-list">
+            <h3>Shared Memories</h3>
+            <p>No memories shared yet. Be the first to share one!</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
